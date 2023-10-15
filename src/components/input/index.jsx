@@ -27,7 +27,7 @@ export default function ToDoInput() {
       <input
         type="text"
         placeholder="ENTER TASK"
-        className="w-[200px] md:w-[360px] h-[60px] text-white text-2xl bg-[#080c0b] p-4 mr-5 focus:border focus:border-[#379f88] outline-none focus:ring-4 focus:ring-[#379f88] placeholder: rounded-lg transition duration-150"
+        className="w-[200px] md:w-[360px] h-[60px] text-txtColor text-2xl bg-muted p-4 mr-5 focus:border focus:border-accent outline-none focus:ring-4 focus:ring-accent rounded-lg transition duration-150"
         value={todoName}
         onChange={(e) => setTodoName(e.target.value)}
         onKeyDown={(e) => handleKeyDown(e)}

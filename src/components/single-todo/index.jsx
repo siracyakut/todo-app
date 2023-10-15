@@ -51,7 +51,7 @@ export default function SingleToDo({ todo }) {
               UPDATE TASK
             </p>
             <input
-              className="flex-1 w-[200px] md:w-[360px] h-[60px] text-white text-2xl bg-[#080c0b] p-4 mr-5 focus:border focus:border-[#379f88] outline-none focus:ring-4 focus:ring-[#379f88] placeholder: rounded-lg transition duration-150"
+              className="flex-1 w-[200px] md:w-[360px] h-[60px] text-txtColor text-2xl bg-muted p-4 mr-5 focus:border focus:border-accent outline-none focus:ring-4 focus:ring-accent rounded-lg transition duration-150"
               type="text"
               value={editText}
               onChange={(e) => setEditText(e.target.value)}
@@ -80,7 +80,7 @@ export default function SingleToDo({ todo }) {
           </form>
         </div>
       )}
-      <li className="flex items-center justify-between mt-8 p-5 border-4 border-[#0b100f] rounded-lg w-full h-[103px] gap-10">
+      <li className="flex items-center justify-between mt-8 p-5 border-4 border-muted rounded-lg w-full h-[103px] gap-10">
         <div className="group flex items-center gap-2 h-full overflow-auto scrollbar-thin scrollbar-thumb-accent scrollbar-track-accent/10 scrollbar-track-rounded scrollbar-thumb-rounded p-1">
           <div className="flex items-center relative">
             <input

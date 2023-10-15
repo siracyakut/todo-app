@@ -6,7 +6,7 @@
   --hue: 166;
   --bg: var(--hue) 15% 10%;
   --txt: var(--hue) 30% 88%;
-  --accent: var(--hue) 55% 50%;
+  --accent: var(--hue) 50% 50%;
   --accent-remove: 10 55% 50%;
   --muted: var(--hue) 20% 4%;
 }
@@ -33,7 +33,7 @@
   }
 
   div form {
-    box-shadow: 0 -1em 3em hsl(var(--muted)),0 1em 3em hsl(var(--accent)/.2);
+    box-shadow: 0 -1em 3em hsl(var(--muted)), 0 1em 3em hsl(var(--accent) / 0.2);
   }
 
   button:not(#remove):hover {
