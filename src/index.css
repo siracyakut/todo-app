@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --hue: 166;
+  --bg: var(--hue) 15% 10%;
+  --txt: var(--hue) 30% 88%;
+  --accent: var(--hue) 55% 50%;
+  --accent-remove: 10 55% 50%;
+  --muted: var(--hue) 20% 4%;
+}
+
+@layer base {
+  html,
+  body {
+    @apply bg-darkBgColor text-txtColor antialiased;
+  }
+
+  #root {
+    @apply flex justify-center;
+    min-height: 100vh;
+  }
+
+  button:not(#remove), input[type="checkbox"] {
+    box-shadow: 0.05em 0.1em 0.9em hsl(var(--accent) / 0.3),
+      0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent));
+  }
+
+  button[id="remove"] {
+    box-shadow: 0.05em 0.1em 0.9em hsl(var(--accent-remove) / 0.3),
+    0 0 0 -0.1em hsl(var(--bg)), 0 0 0 -0.2em hsl(var(--accent-remove));
+  }
+
+  button:not(#remove):hover {
+    @apply bg-hoverColor shadow-none;
+  }
+
+  button[id="remove"]:hover {
+    @apply bg-removeHoverColor shadow-none;
+  }
+
+  input::placeholder {
+    @apply text-txtColor;
+  }
+
+  ::selection {
+    @apply bg-selectColor text-darkBgColor;
+  }
+}
