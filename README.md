@@ -8,6 +8,8 @@ A simple todo app made with React and using Redux, Tailwind, Framer Motion and N
 * Edit Todo Names
 * Edit Todo States (Done, not Done)
 * Remove Todos
+* Light/Dark Themes
+* Responsive Design for All Devices
 ### Technologies Used
 * [JavaScript](https://www.javascript.com/) JavaScript is a high-level programming language that follows the ECMAScript standard. It was originally designed as a scripting language for websites but became widely adopted as a general-purpose programming language, and is currently the most popular programming language in use.
 * [React](https://react.dev/) The library for web and native user interfaces
