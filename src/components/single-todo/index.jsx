@@ -80,11 +80,11 @@ export default function SingleToDo({ todo }) {
           </form>
         </div>
       )}
-      <li className="flex items-center justify-between mt-8 p-5 border-4 border-muted rounded-lg w-full h-[103px] gap-10">
-        <div className="group flex items-center gap-2 h-full overflow-auto scrollbar-thin scrollbar-thumb-accent scrollbar-track-accent/10 scrollbar-track-rounded scrollbar-thumb-rounded p-1">
+      <li className="flex items-center justify-between mt-8 p-1 md:py-2 md:px-5 border-4 border-muted rounded-lg w-full h-[80px] md:h-[103px] gap-10">
+        <div className="group flex-1 flex items-center gap-2 h-full overflow-auto scrollbar-thin scrollbar-thumb-accent scrollbar-track-accent/10 scrollbar-track-rounded scrollbar-thumb-rounded p-1">
           <div className="flex items-center relative">
             <input
-              className="shrink-0 shadow-accent relative h-[28.8px] w-[28.8px] rounded-[3.2px] checked:bg-accent bg-muted border border-accent appearance-none outline-none cursor-pointer group-hover:ring-4 group-hover:ring-accent/30 transition-all"
+              className="shrink-0 shadow-accent relative w-5 h-5 md:h-[28.8px] md:w-[28.8px] rounded-[3.2px] checked:bg-accent bg-muted border border-accent appearance-none outline-none cursor-pointer group-hover:ring-4 group-hover:ring-accent/30 transition-all"
               type="checkbox"
               checked={todo.do}
               onClick={() => handleDone()}
@@ -97,9 +97,7 @@ export default function SingleToDo({ todo }) {
                 viewBox="0 0 24 24"
                 strokeWidth="2"
                 stroke="currentColor"
-                width="24"
-                height="24"
-                className="top-0.5 left-0.5 absolute pointer-events-none text-black"
+                className="w-4 h-4 md:w-6 md:h-6 top-0.5 left-0.5 absolute pointer-events-none text-black"
               >
                 <path
                   strokeLinecap="round"
@@ -109,10 +107,10 @@ export default function SingleToDo({ todo }) {
               </svg>
             )}
           </div>
-          <div className="flex items-center w-full h-full">
+          <div className="w-full h-full flex items-center">
             <p
               className={classNames(
-                "text-[28.8px] leading-[29.12px] font-normal cursor-pointer",
+                "my-auto md:text-[28.8px] md:leading-[29.12px] font-normal cursor-pointer",
                 {
                   "line-through": todo.do,
                 },
@@ -126,7 +124,7 @@ export default function SingleToDo({ todo }) {
         <div className="flex items-center justify-center h-full gap-2">
           <button
             type="button"
-            className="h-[60px] w-[60px] flex items-center justify-center bg-accent p-2 outline-none transition duration-150 rounded-lg"
+            className="h-10 w-10 md:h-[60px] md:w-[60px] flex items-center justify-center bg-accent p-2 outline-none transition duration-150 rounded-lg"
             onClick={() => toggleEditMode()}
           >
             <svg
@@ -147,7 +145,7 @@ export default function SingleToDo({ todo }) {
           <button
             id="remove"
             type="button"
-            className="h-[60px] w-[60px] flex items-center justify-center bg-accentRemove p-2 outline-none transition duration-150 rounded-lg"
+            className="h-10 w-10 md:h-[60px] md:w-[60px] flex items-center justify-center bg-accentRemove p-2 outline-none transition duration-150 rounded-lg"
             onClick={() => handleRemove()}
           >
             <svg
