@@ -2,7 +2,7 @@
 ### Introduction
 A simple todo app made with React and using Redux, Tailwind, Framer Motion and Nanoid.
 ### Demo
-[https://sirac-todo-app.netlify.app/](https://sirac-todo-app.netlify.app/)
+[https://sirac-todo-app.vercel.app/](https://sirac-todo-app.vercel.app/)
 ### Project Support Features
 * Add Todos
 * Edit Todo Names
